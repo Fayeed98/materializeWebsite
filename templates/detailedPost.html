@@ -4,8 +4,8 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+      <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../static/css/footer.css"/>
 
 
       <!--Let browser know website is optimized for mobile-->
@@ -62,7 +62,7 @@
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="../static/js/materialize.min.js"></script>
       <script type="text/javascript">
 
       $(document).ready(function(){
@@ -71,14 +71,14 @@
         if (carType == "pagani"){
           /*alert("pagani");*/
 
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="static/images/1.jpg"><span class="card-title" style="color: crimson;">Pagani</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
+          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="../static/images/1.jpg"><span class="card-title" style="color: crimson;">Pagani</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>{{ lines }}</p></div></div></div></div>');
         
          
 
         }
         else if (carType == "bugatti"){
           //alert("bugatti");
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="static/images/2.jpg"><span class="card-title" style="color: crimson;">Bugatti</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
+          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="../static/images/2.jpg"><span class="card-title" style="color: crimson;">Bugatti</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>{{ lines }}</p></div></div></div></div>');
         
           
 
