@@ -4,7 +4,7 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
       
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -25,7 +25,7 @@
         <div class="col s12 m8 push-m2">
           <div class="card large " id="pagani">
             <div class="card-image">
-              <img src="images/1.jpg">
+              <img src="static/images/1.jpg">
               <span class="card-title" style="color: crimson;">Pagani</span>
             </div>
             <div class="card-content">
@@ -44,7 +44,7 @@
         <div class="col s12 m8 push-m2">
           <div class="card large " id="bugatti">
             <div class="card-image">
-              <img src="images/2.jpg">
+              <img src="static/images/2.jpg">
               <span class="card-title" style="color: firebrick;">Bugatti</span>
             </div>
             <div class="card-content">
@@ -95,15 +95,15 @@
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="static/js/materialize.min.js"></script>
       <script type="text/javascript">
       $('#pagani').click(function(){
         localStorage.setItem("car","pagani");
-        window.location.href = "detailedPost.html";
+        window.location.href = "/detailedpost";
       });
       $('#bugatti').click(function(){
         localStorage.setItem("car","bugatti");
-        window.location.href= "detailedPost.html";
+        window.location.href= "/detailedpost";
       })
       </script>
       

@@ -4,7 +4,7 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/footer.css"/>
 
 
@@ -17,7 +17,7 @@
       <nav>
     <div class="nav-wrapper">
       <span style="margin-left: 1cm;">22/12/16 10:20AM</span>
-      <a href="#" class="brand-logo center">Fayeed's Blog</a>
+      <a href="/" class="brand-logo center">Fayeed's Blog</a>
      
     </div>
   </nav>
@@ -67,18 +67,18 @@
 
       $(document).ready(function(){
         var carType = localStorage.getItem("car");
-        alert("carType "+carType);
+        /*alert("carType "+carType);*/
         if (carType == "pagani"){
-          alert("pagani");
+          /*alert("pagani");*/
 
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="images/1.jpg"><span class="card-title" style="color: crimson;">Pagani</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
+          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="static/images/1.jpg"><span class="card-title" style="color: crimson;">Pagani</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
         
          
 
         }
         else if (carType == "bugatti"){
-          alert("bugatti");
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="images/2.jpg"><span class="card-title" style="color: crimson;">Bugatti</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
+          //alert("bugatti");
+          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="static/images/2.jpg"><span class="card-title" style="color: crimson;">Bugatti</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>Hello</p></div></div></div></div>');
         
           
 
