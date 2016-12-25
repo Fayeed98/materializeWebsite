@@ -66,23 +66,13 @@
       <script type="text/javascript">
 
       $(document).ready(function(){
-        var carType = localStorage.getItem("car");
+        // var carType = localStorage.getItem("car");
         /*alert("carType "+carType);*/
-        if (carType == "pagani"){
-          /*alert("pagani");*/
-
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="../static/images/1.jpg"><span class="card-title" style="color: crimson;">Pagani</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>{{ lines }}</p></div></div></div></div>');
         
-         
 
-        }
-        else if (carType == "bugatti"){
-          //alert("bugatti");
-          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="../static/images/2.jpg"><span class="card-title" style="color: crimson;">Bugatti</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>{{ lines }}</p></div></div></div></div>');
+          $('#main').html('<div class="row"><div class="col s12 m10 push-m1"><div class="card large " style="height:initial;"><div class="card-image" style="height:300px;"><img src="../static/images/{{ carimage }}.jpg"><span class="card-title" style="color: crimson;">{{ carname }}</span></div><div class="card-content" style="overflow-y:scroll;height:600px"><p>{{ lines }}</p></div></div></div></div>');
         
-          
-
-        }
+        
 
       });
       </script>
